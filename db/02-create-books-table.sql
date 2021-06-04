@@ -8,5 +8,7 @@ CREATE TABLE books (
     price_in_pence INT,
     quantity_in_stock INT,
     release_date DATE,
-    is_fiction BOOL
+    is_fiction BOOL,
+    author_id INT REFERENCES authors(identifier)
+
 );
