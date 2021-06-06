@@ -1,5 +1,8 @@
 \c my_bookshop
 
-SELECT * FROM books 
-JOIN authors
-ON authors.identifier =books.author_id;
+
+ALTER TABLE books
+ADD book_author_id INTEGER,
+ADD FOREIGN KEY (book_author_id) REFERENCES authors(author_id);
+
+SELECT * FROM books

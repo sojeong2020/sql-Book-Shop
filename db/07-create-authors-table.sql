@@ -1,7 +1,7 @@
 \c my_bookshop
-
-CREATE TABLE IF NOT EXISTS authors (
-    identifier SERIAL PRIMARY KEY,
+DROP TABLE IF EXISTS authors;
+CREATE TABLE authors (
+    author_id SERIAL PRIMARY KEY,
     author_name VARCHAR(100) NOT NULL  ,
     fun_fact TEXT
 );

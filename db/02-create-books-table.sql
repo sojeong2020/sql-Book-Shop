@@ -3,12 +3,10 @@
 -- create the books table here
 
 CREATE TABLE books (
-    identifier SERIAL PRIMARY KEY,
+    book_id SERIAL PRIMARY KEY,
     title VARCHAR(40) NOT NULL,
     price_in_pence INT,
     quantity_in_stock INT,
     release_date DATE,
-    is_fiction BOOL,
-    author_id INT REFERENCES authors(identifier)
-
+    is_fiction BOOL
 );
