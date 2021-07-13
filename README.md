@@ -1,4 +1,4 @@
-# SQL Book Shop
+## SQL Book Shop
 
 You have been tasked with modernising your local bookshop's inventory records! 📚
 
